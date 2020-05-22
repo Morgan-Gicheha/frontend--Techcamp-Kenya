@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* general styling */
+*{
+    box-sizing: border-box;
+}
+/* import the fonts */
+body{
+    font-family: 'poppins';
+}
+
+/* header */
+header{
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    font-weight: 200;
+    margin: 0;
+}
+h1 span{
+    font-weight: 600;
+}
+/* styling paragraphs */
+p{
+    color: hsl(229, 6%, 66%);
+}
+
+/* styling container */
+.container{
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* styling boxes */
+.box{
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* headers inside box */
+.box h3{
+    margin: 0;
+}
+
+/* stylimg images */
+.box img{
+    display: block;
+    margin-left: auto;
+}
+
+/* paragraphs inside boxes */
+.box p{
+    font-size: 14px;
+    margin: 15px 0 30px;
+}
+
+/* giing boxes colors */
+.box-red{
+    border-top:4px solid hsl(0, 78%, 62%);
+}
+
+.box-blue{
+    border-top: 4px solid hsl(212, 86%, 64%);
+
+}
+
+.box-cyan{
+    border-top: 4px solid hsl(180, 62%, 55%);
+
+}
+
+.box-orange{
+    border-top: solid hsl(34, 97%, 64%);
+
+}
+
+
+/* tranforming boxes */
+.move{
+    transform: translateY(50%);
+}
+
+@media(max-width: 775px){
+    .move{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
