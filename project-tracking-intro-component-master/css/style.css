@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    font-family: 'Barlow';
+    font-size: 18px;
+    margin: 0;
+}
+
+nav, button,h4,h1{
+    font-family: 'Barlow Condensed';
+}
+
+.container{
+    padding: 10px;
+    width: 1200px;
+    margin: 50px auto;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+    
+    align-items: center;
+}
+nav{
+
+    margin: 50px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav ul a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.right-image img{
+
+    width: 130%;
+    transform: translateX(30%);
+    }
+.flex{
+    flex-wrap: wrap-reverse;
+    display: flex;
+}
+
+.flex div:first-child{
+    flex: 0.9;
+}
+.flex div:last-child{
+    flex: 1.1;
+}
+
+
+h5{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: hsl(231, 7%, 65%);
+}
+
+h5 span{
+    letter-spacing: normal;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    padding: 5px 8px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 65px;
+    opacity: .8;
+    line-height: 60px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.flex p{
+    color: hsl(230, 11%, 40%);
+    font-size: 20px;
+}
+
+button{
+    background-color: hsl(0, 100%, 68%);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: hsl(207, 33%, 95%);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    transform: scale(1.01)
+}
+
+small{
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+.curve{
+    position: absolute;
+    width: 47%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    background-color: hsl(207, 33%, 95%);
+    border-radius: 0px 0px 0px 150px;
+    opacity: .9;
+    z-index: -1;
+}
+
+
+header nav .login{
+    margin-left: 60px;
+    color: hsl(231, 7%, 65%);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:950px){
+    body{
+        overflow: hidden;
+    }
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .right-image img{
+
+        width: 90%;
+        transform: translateX(30%);
+        }
+    .container{
+        margin: 0;
+    }
+}
